@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>శ్రీ రామ కోటి | Ram Koti Digital Writing Book</title>
+<meta name="description" content="Write Sri Rama Namam digitally. Track your personal Ram Koti journey.">
+<meta name="theme-color" content="#7B1818">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron:#E8710A; --saffron-lt:#F4943E; --saffron-bg:#FFF3E6; --saffron-dk:#C45E00;
+  --maroon:#7B1818; --maroon-lt:#9B2C2C; --maroon-dk:#5C1010;
+  --gold:#C4960C; --gold-lt:#E8BD40; --gold-bg:#FDF6E3; --gold-dk:#8B6914;
+  --brown-dk:#2D1B0E; --brown:#4A3728; --brown-mt:#8B7355;
+  --cream:#FEFAF2; --cream-md:#F8F0E0; --cream-dk:#EDE4D0;
+  --paper:#FFFCF5; --paper-line:#E5D9C3;
+  --txt:#2D1B0E; --txt2:#4A3728; --txt-mt:#8B7355; --txt-lt:#A89880;
+  --bdr:#D9CDB8; --bdr-lt:#E8DFD0;
+  --green:#2D7A3A; --green-bg:#E8F5E9; --red:#C62828;
+  --sh-sm:0 2px 8px rgba(45,27,14,.08); --sh-md:0 4px 16px rgba(45,27,14,.1);
+  --sh-lg:0 8px 32px rgba(45,27,14,.12); --sh-xl:0 16px 48px rgba(45,27,14,.15);
+  --r-s:8px; --r-m:12px; --r-l:16px; --r-xl:20px;
+  --tr:.2s ease;
+  --f-te:'Noto Sans Telugu',sans-serif; --f-dp:'Playfair Display',serif;
+  --f-bd:'Inter','Noto Sans Telugu',sans-serif;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-bd);background:var(--cream);color:var(--txt);min-height:100dvh;overflow-x:hidden;line-height:1.5;-webkit-font-smoothing:antialiased}
+body.has-bnav{padding-bottom:72px}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 15% 30%,rgba(232,113,10,.05)0%,transparent 60%),radial-gradient(ellipse at 85% 70%,rgba(196,150,12,.04)0%,transparent 60%);pointer-events:none;z-index:0}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--cream-md)}::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:3px}
+button{font-family:inherit;cursor:pointer}
+
+/* ===== HEADER ===== */
+.hdr{background:linear-gradient(135deg,var(--maroon-dk),var(--maroon),var(--maroon-lt));color:#fff;position:sticky;top:0;z-index:200;box-shadow:var(--sh-md)}
+.hdr-in{max-width:1280px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.hdr-brand{display:flex;align-items:center;gap:10px}
+.hdr-logo{width:36px;height:36px;background:linear-gradient(135deg,var(--saffron),var(--gold));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.2);flex-shrink:0}
+.hdr-t h1{font-family:var(--f-te);font-size:17px;font-weight:700;line-height:1.2}
+.hdr-t p{font-size:10px;opacity:.8}
+.hdr-acts{display:flex;align-items:center;gap:6px}
+.hdr-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;padding:4px 10px;border-radius:14px;font-size:11px;transition:var(--tr);font-family:var(--f-bd)}
+.hdr-btn:hover{background:rgba(255,255,255,.22)}
+.usr-sel{max-width:130px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;padding:4px 8px;border-radius:14px;font-size:11px;font-family:var(--f-bd)}
+.usr-sel option{color:#333;background:#fff}
+
+/* ===== NAV ===== */
+.dnav{background:var(--paper);border-bottom:1px solid var(--bdr);display:none;position:sticky;top:57px;z-index:190}
+@media(min-width:769px){.dnav{display:block}body.has-bnav{padding-bottom:0}}
+.dnav-in{max-width:1280px;margin:0 auto;display:flex;padding:0 16px}
+.dnav-i{padding:11px 16px;font-size:13px;font-weight:500;color:var(--txt-mt);border-bottom:2.5px solid transparent;transition:var(--tr);display:flex;align-items:center;gap:5px;white-space:nowrap;user-select:none}
+.dnav-i:hover{color:var(--saffron);background:var(--saffron-bg)}.dnav-i.on{color:var(--saffron-dk);border-bottom-color:var(--saffron);font-weight:600}
+.bnav{position:fixed;bottom:0;left:0;right:0;background:var(--paper);border-top:1px solid var(--bdr);display:flex;justify-content:space-around;align-items:flex-end;padding:0 4px 6px;z-index:200;box-shadow:0 -4px 16px rgba(45,27,14,.08)}
+@media(min-width:769px){.bnav{display:none}}
+.bnav-i{display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 5px 2px;font-size:9.5px;font-weight:500;color:var(--txt-mt);transition:var(--tr);border-radius:var(--r-s);min-width:46px;-webkit-tap-highlight-color:transparent;user-select:none}
+.bnav-i .bi{font-size:19px;line-height:1}.bnav-i.on{color:var(--saffron-dk);font-weight:600}
+.bnav-i.wctr{position:relative;top:-15px;width:52px;height:52px;min-width:52px;border-radius:50%;background:linear-gradient(145deg,var(--saffron),var(--saffron-dk));color:#fff;justify-content:center;padding:0;gap:0;box-shadow:0 4px 16px rgba(232,113,10,.4)}
+.bnav-i.wctr .bi{font-size:21px}.bnav-i.wctr.on{color:#fff}.bnav-i.wctr:active{transform:scale(.93)}
+
+/* ===== SCREENS ===== */
+.screen{display:none;position:relative;z-index:1}.screen.show{display:block;animation:fadeIn .25s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ===== WELCOME / ONBOARDING ===== */
+.welcome-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.welcome-card{background:var(--paper);border:1px solid var(--bdr-lt);border-radius:var(--r-xl);padding:40px 28px;box-shadow:var(--sh-lg);text-align:center;max-width:440px;width:100%}
+.welcome-icon{font-size:52px;margin-bottom:8px}
+.welcome-title{font-family:var(--f-te);font-size:26px;font-weight:800;color:var(--maroon);margin-bottom:4px}
+.welcome-sub{font-size:14px;color:var(--txt-mt);margin-bottom:28px;line-height:1.6}
+.welcome-line{width:80px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:16px auto}
+
+/* ===== USER PICK ===== */
+.pick-list{list-style:none;text-align:left;margin-bottom:16px}
+.pick-card{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--bdr-lt);border-radius:var(--r-s);margin-bottom:8px;cursor:pointer;transition:var(--tr)}
+.pick-card:hover{background:var(--saffron-bg);border-color:var(--saffron-lt)}
+.pick-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;flex-shrink:0}
+.pick-info{flex:1;min-width:0}.pick-nm{font-weight:600;font-size:14px}.pick-dt{font-size:11px;color:var(--txt-mt)}
+.pick-cnt{font-family:var(--f-dp);font-size:16px;font-weight:700;color:var(--saffron)}
+.or-div{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--txt-mt);font-size:12px}
+.or-div::before,.or-div::after{content:'';flex:1;height:1px;background:var(--bdr)}
+
+/* ===== FORMS ===== */
+.fg{margin-bottom:16px;text-align:left}.fg label{display:block;font-size:12px;font-weight:600;color:var(--txt2);margin-bottom:5px}
+.fi{width:100%;padding:10px 14px;border:2px solid var(--bdr);border-radius:var(--r-s);font-size:14px;font-family:var(--f-bd);color:var(--txt);background:var(--paper);transition:border-color var(--tr)}
+.fi:focus{outline:none;border-color:var(--saffron)}select.fi{cursor:pointer}
+.radio-group{display:flex;gap:12px;flex-wrap:wrap}
+.radio-opt{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:14px;color:var(--txt2)}
+.radio-opt input[type=radio]{accent-color:var(--saffron);width:16px;height:16px}
+
+/* ===== LAYOUT ===== */
+.container{max-width:1280px;margin:0 auto;padding:16px}
+@media(min-width:769px){.container{padding:24px}}
+.g2{display:grid;grid-template-columns:1fr;gap:16px}
+.gst{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:769px){.g2{grid-template-columns:1fr 1fr}.g2w{grid-template-columns:3fr 2fr}.gst{grid-template-columns:repeat(4,1fr)}}
+
+/* ===== CARDS ===== */
+.cd{background:var(--paper);border:1px solid var(--bdr-lt);border-radius:var(--r-m);padding:18px;box-shadow:0 1px 3px rgba(45,27,14,.06);position:relative;overflow:hidden;margin-bottom:16px}
+.cd.at::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--saffron),var(--gold),var(--maroon-lt))}
+.cd-h{font-family:var(--f-te);font-size:15px;font-weight:600;color:var(--maroon);margin-bottom:14px;display:flex;align-items:center;gap:8px;line-height:1.3;flex-wrap:wrap}
+
+/* ===== STATS ===== */
+.sb{background:var(--cream-md);border:1px solid var(--bdr-lt);border-radius:var(--r-s);padding:13px 8px;text-align:center;transition:var(--tr)}
+.sb:hover{border-color:var(--bdr);box-shadow:var(--sh-sm)}
+.sv{font-family:var(--f-dp);font-size:21px;font-weight:700;line-height:1.1}
+.sv.cs{color:var(--saffron)}.sv.cg{color:var(--gold-dk)}.sv.ck{color:var(--green)}.sv.cm{color:var(--maroon)}.sv.cb{color:var(--brown)}
+.sl{font-size:10.5px;color:var(--txt-mt);margin-top:3px;font-weight:500;line-height:1.3}
+
+/* ===== PROGRESS ===== */
+.pw{margin:10px 0}
+.pbg{width:100%;height:8px;background:var(--cream-dk);border-radius:4px;overflow:hidden;border:1px solid var(--bdr-lt)}
+.pbg.lg{height:18px;border-radius:9px}
+.pfl{height:100%;background:linear-gradient(90deg,var(--saffron),var(--gold-lt));border-radius:inherit;transition:width .6s ease;min-width:0}
+.pfl.lg{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.pm{display:flex;justify-content:space-between;font-size:11px;color:var(--txt-mt);margin-top:5px;font-weight:500}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;border-radius:var(--r-s);font-size:14px;font-weight:600;border:none;transition:var(--tr);font-family:var(--f-te);line-height:1.3;-webkit-tap-highlight-color:transparent;user-select:none}
+.btn:active{transform:scale(.97)}
+.btn-p{background:linear-gradient(135deg,var(--saffron),var(--saffron-dk));color:#fff;box-shadow:0 3px 12px rgba(232,113,10,.3)}
+.btn-p:hover{box-shadow:0 5px 18px rgba(232,113,10,.4);transform:translateY(-1px)}
+.btn-o{background:transparent;color:var(--maroon);border:2px solid var(--maroon)}.btn-o:hover{background:var(--maroon);color:#fff}
+.btn-g{background:var(--cream-md);color:var(--txt2);border:1px solid var(--bdr)}.btn-g:hover{background:var(--cream-dk)}
+.btn-sm{padding:6px 13px;font-size:12px;border-radius:7px}
+.btn-lg{padding:14px 30px;font-size:17px;border-radius:var(--r-m)}
+.btn-f{width:100%}
+
+/* ===== TABS ===== */
+.tabs{display:flex;border-radius:var(--r-s);overflow:hidden;border:2px solid var(--bdr);margin-bottom:16px}
+.tb{flex:1;padding:9px 6px;text-align:center;font-weight:500;font-size:13px;background:var(--cream);color:var(--txt-mt);transition:var(--tr);border:none;font-family:var(--f-bd);-webkit-tap-highlight-color:transparent}
+.tb.on{font-weight:600}.tb.on.sf{background:var(--saffron);color:#fff}.tb.on.mr{background:var(--maroon);color:#fff}
+
+/* ===== TOAST ===== */
+.toast-w{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:500;pointer-events:none}
+.toast-m{background:var(--brown-dk);color:#fff;padding:11px 22px;border-radius:var(--r-s);font-size:13px;font-weight:500;box-shadow:var(--sh-xl);opacity:0;transform:translateY(-12px);transition:all .3s ease;text-align:center;max-width:90vw}
+.toast-m.vis{opacity:1;transform:translateY(0)}
+
+/* ===== MODAL ===== */
+.mod-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:400;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:16px}
+.mod-bg.op{opacity:1;pointer-events:auto}
+.mod-box{background:var(--paper);border-radius:var(--r-xl);padding:32px 24px;text-align:center;max-width:400px;width:100%;box-shadow:var(--sh-xl);transform:scale(.85);transition:transform .3s;border:2px solid var(--gold-lt)}
+.mod-bg.op .mod-box{transform:scale(1)}
+.mod-em{font-size:52px;margin-bottom:10px}.mod-tt{font-family:var(--f-te);font-size:20px;font-weight:700;color:var(--maroon);margin-bottom:8px}
+.mod-tx{font-size:13.5px;color:var(--txt2);line-height:1.6;margin-bottom:22px}
+
+.form-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:350;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:16px}
+.form-bg.op{opacity:1;pointer-events:auto}
+.form-box{background:var(--paper);border-radius:var(--r-l);padding:26px 22px;max-width:440px;width:100%;box-shadow:var(--sh-xl)}
+.form-tt{font-family:var(--f-te);font-size:17px;font-weight:600;color:var(--maroon);margin-bottom:18px}
+.fa{display:flex;gap:10px;margin-top:20px}.fa .btn{flex:1}
+
+/* ===== HERO ===== */
+.hero{text-align:center;padding:32px 16px 26px;background:linear-gradient(180deg,var(--saffron-bg),transparent);border-radius:var(--r-xl);margin-bottom:18px;border:1px solid rgba(232,113,10,.08);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60%;left:-30%;width:160%;height:160%;background:radial-gradient(circle,rgba(232,113,10,.04),transparent 70%);pointer-events:none}
+.hero-ic{font-size:42px;margin-bottom:4px}.hero h1{font-family:var(--f-te);font-size:32px;font-weight:800;color:var(--maroon);line-height:1.2}
+.hero h2{font-family:var(--f-dp);font-size:18px;color:var(--saffron-dk);font-weight:500;margin-top:2px}
+.hero-ln{width:100px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:12px auto}
+.hero-d{font-size:13.5px;color:var(--txt-mt);max-width:520px;margin:0 auto 22px;line-height:1.7}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+@media(min-width:769px){.hero h1{font-size:40px}.hero h2{font-size:21px}}
+
+/* ===== QUOTE ===== */
+.qbox{background:var(--gold-bg);border:1px solid var(--bdr-lt);border-left:4px solid var(--gold);border-radius:var(--r-s);padding:13px 16px;margin:16px 0;font-style:italic;color:var(--txt2);font-size:13.5px;line-height:1.6}
+
+/* ===== NOTEBOOK ===== */
+.nb{background:var(--paper);border:2px solid var(--paper-line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-md)}
+.nb-hd{background:linear-gradient(135deg,var(--maroon-dk),var(--maroon));color:#fff;padding:11px 14px;display:flex;justify-content:space-between;align-items:center}
+.nb-ht{font-family:var(--f-te);font-size:14px;font-weight:600}
+.nb-pb{font-size:11.5px;background:rgba(255,255,255,.15);padding:3px 10px;border-radius:12px}
+.nb-bd{position:relative;min-height:290px;padding:12px 16px 12px 58px}
+.nb-bd::before{content:'';position:absolute;left:50px;top:0;bottom:0;width:1.5px;background:rgba(200,60,60,.18);z-index:1}
+.nb-bd::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(transparent,transparent 33px,var(--paper-line) 33px,var(--paper-line) 34px);pointer-events:none;opacity:.55}
+.nb-ft{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--cream-md);border-top:1px solid var(--bdr-lt)}
+.pnb{background:var(--paper);border:1px solid var(--bdr);border-radius:7px;padding:5px 12px;font-size:12px;color:var(--txt2);transition:var(--tr);font-family:var(--f-bd)}.pnb:hover{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+
+/* Tap */
+.tpa{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:270px;position:relative;z-index:2}
+.tp-lb{font-family:var(--f-te);font-size:14px;color:var(--txt2);text-align:center}
+.tp-nm{font-family:var(--f-dp);font-size:40px;font-weight:800;color:var(--saffron);line-height:1;margin-top:4px;text-align:center}
+.tap-b{width:132px;height:132px;border-radius:50%;background:linear-gradient(145deg,var(--saffron),var(--saffron-dk));color:#fff;border:4px solid var(--gold-lt);font-family:var(--f-te);box-shadow:0 6px 24px rgba(232,113,10,.35),inset 0 2px 4px rgba(255,255,255,.15);transition:transform .1s,box-shadow .1s;display:flex;flex-direction:column;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;user-select:none;position:relative;margin-top:18px}
+.tap-b::after{content:'';position:absolute;inset:7px;border-radius:50%;border:2px dashed rgba(255,255,255,.2)}
+.tap-b:active{transform:scale(.9);box-shadow:0 3px 12px rgba(232,113,10,.35)}
+.tap-b .ti{font-size:26px;margin-bottom:2px}.tap-b .tn{font-size:19px;font-weight:700}.tap-b .ts{font-size:10.5px;opacity:.85}
+.flt{position:fixed;font-family:var(--f-te);font-size:17px;font-weight:700;color:var(--saffron);pointer-events:none;z-index:600;opacity:0}
+.flt.go{animation:fup .9s ease-out forwards}
+@keyframes fup{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-65px) scale(1.2)}}
+
+/* Type */
+.tya{position:relative;z-index:2}
+.tyf{width:100%;min-height:190px;border:none;background:transparent;font-family:var(--f-te);font-size:19px;line-height:34px;color:var(--txt);resize:vertical;padding:4px 12px;outline:none}
+.tyf::placeholder{color:var(--txt-lt);opacity:.6}
+.tyst{display:flex;justify-content:space-between;align-items:center;padding:9px 13px;background:var(--cream-md);border-radius:var(--r-s);margin-top:10px;font-size:13px;position:relative;z-index:2}
+.tyst strong{color:var(--saffron)}
+
+/* Mala */
+.mala-s{text-align:center;margin-top:10px}.mala-ct{font-family:var(--f-dp);font-size:26px;font-weight:700;color:var(--gold-dk)}
+.mala-lb{font-size:11.5px;color:var(--txt-mt);margin-top:2px}
+.mala-bd{display:flex;flex-wrap:wrap;gap:2.5px;justify-content:center;margin-top:8px;max-width:280px;margin-left:auto;margin-right:auto}
+.mbd{width:9px;height:9px;border-radius:50%;background:var(--cream-dk);border:1px solid var(--bdr);transition:background .15s}.mbd.fl{background:var(--saffron);border-color:var(--saffron-dk)}
+
+.ws-bar{display:flex;justify-content:space-around;padding:13px;background:var(--cream-md);border-radius:var(--r-s);margin-top:14px}
+.ws{text-align:center}.wsv{font-family:var(--f-dp);font-size:18px;font-weight:700;color:var(--saffron)}.wsl{font-size:10.5px;color:var(--txt-mt);margin-top:2px}
+
+/* ===== TODAY ===== */
+.th-c{text-align:center;padding:26px 16px;background:linear-gradient(135deg,var(--saffron-bg),var(--gold-bg));border-radius:var(--r-l);margin-bottom:16px;border:1px solid rgba(232,113,10,.1)}
+.th-dt{font-size:12.5px;color:var(--txt-mt);margin-bottom:5px;font-weight:500}
+.th-bn{font-family:var(--f-dp);font-size:48px;font-weight:800;color:var(--saffron);line-height:1}
+.th-sb{font-family:var(--f-te);font-size:14px;color:var(--txt2);margin-top:3px}
+.th-tl{font-size:12.5px;color:var(--txt-mt);margin-top:10px}.th-tl strong{color:var(--txt2)}
+.ss-l{list-style:none}.ss-i{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--bdr-lt);font-size:13.5px}.ss-i:last-child{border-bottom:none}
+.ss-tm{color:var(--txt-mt);font-size:12px}.ss-ct{font-weight:700;color:var(--saffron)}
+@media(max-width:768px){.th-bn{font-size:42px}}
+
+/* Calendar */
+.cl-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.cl-mt{font-weight:600;font-size:14.5px;color:var(--maroon)}
+.cl-nb{background:var(--cream);border:1px solid var(--bdr);border-radius:6px;padding:3px 9px;font-size:12.5px;color:var(--txt2);transition:var(--tr);font-family:var(--f-bd)}.cl-nb:hover{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+.cl-g{display:grid;grid-template-columns:repeat(7,1fr);gap:2.5px}
+.cl-dh{text-align:center;font-size:10px;font-weight:700;color:var(--txt-mt);padding:4px 0;text-transform:uppercase}
+.cl-c{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:12px;font-weight:500;color:var(--txt2)}
+.cl-c.emp{visibility:hidden}.cl-c.has{background:rgba(232,113,10,.1);color:var(--saffron-dk);font-weight:600}.cl-c.has.hi{background:rgba(232,113,10,.25)}
+.cl-c.td{border:2px solid var(--saffron);font-weight:700}.cl-c.has.td{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+
+/* ===== HISTORY ===== */
+.yr-sel{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.yr-b{padding:5px 14px;border-radius:16px;font-size:12.5px;font-weight:600;border:2px solid var(--bdr);background:var(--cream);color:var(--txt2);transition:var(--tr);font-family:var(--f-bd)}
+.yr-b.on{background:var(--maroon);color:#fff;border-color:var(--maroon)}.yr-b:hover:not(.on){background:var(--cream-dk)}
+.yr-lb{font-size:12px;color:var(--txt-mt);font-weight:600}
+.hl{list-style:none}.hi{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--bdr-lt)}.hi:last-child{border-bottom:none}
+.hdt{font-weight:600;font-size:13.5px}.hds{font-size:11px;color:var(--txt-mt);margin-top:1px}
+.hct{font-family:var(--f-dp);font-size:18px;font-weight:700;color:var(--saffron)}
+.bars{display:flex;align-items:flex-end;gap:4px;height:125px;padding:12px 0}
+.bcol{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end}
+.bstk{width:100%;max-width:30px;background:linear-gradient(180deg,var(--saffron-lt),var(--saffron-dk));border-radius:3px 3px 0 0;min-height:3px;transition:height .4s ease}
+.bv{font-size:9px;font-weight:600;color:var(--txt-mt);margin-bottom:2px}.blb{font-size:9px;color:var(--txt-mt);margin-top:4px}
+
+/* ===== RAM KOTI ===== */
+.kh{text-align:center;padding:32px 16px;background:linear-gradient(180deg,rgba(123,24,24,.05),var(--gold-bg));border-radius:var(--r-xl);border:1px solid rgba(196,150,12,.12);margin-bottom:18px}
+.kh-ic{font-size:38px;margin-bottom:5px}.kh-tt{font-family:var(--f-te);font-size:21px;font-weight:700;color:var(--maroon)}
+.kh-en{font-size:12.5px;color:var(--txt-mt);margin-bottom:5px}
+.kh-gn{font-family:var(--f-dp);font-size:32px;font-weight:800;color:var(--gold-dk);margin:8px 0}
+.kh-pc{font-family:var(--f-dp);font-size:42px;font-weight:800;color:var(--saffron);line-height:1}
+.kh-pl{font-size:12.5px;color:var(--txt-mt);margin-top:3px}
+@media(max-width:768px){.kh-pc{font-size:36px}.kh-gn{font-size:26px}}
+.ms-ul{list-style:none}
+.ms-i{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid var(--bdr-lt)}.ms-i:last-child{border-bottom:none}
+.ms-ic{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.ms-ic.dn{background:var(--green-bg);border:2px solid var(--green)}.ms-ic.pn{background:var(--cream-md);border:2px solid var(--bdr)}
+.ms-inf{flex:1;min-width:0}.ms-nm{font-weight:600;font-size:13px}.ms-dl{font-size:11px;color:var(--txt-mt);margin-top:1px}
+.ms-bg{font-size:10.5px;font-weight:600;padding:2px 9px;border-radius:10px;white-space:nowrap}
+.ms-bg.dn{background:var(--green-bg);color:var(--green)}.ms-bg.pn{background:var(--cream-md);color:var(--txt-mt)}
+
+/* ===== PROFILE ===== */
+.p-top{text-align:center;padding:26px 16px}
+.p-av{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 10px;box-shadow:0 4px 16px rgba(232,113,10,.25);color:#fff;border:3px solid var(--gold-lt)}
+.p-nm{font-family:var(--f-te);font-size:21px;font-weight:700;color:var(--maroon)}.p-sc{font-size:12px;color:var(--txt-mt);margin-top:3px}
+.ssg{margin-bottom:18px}.ssg-t{font-size:11px;font-weight:700;color:var(--txt-mt);text-transform:uppercase;letter-spacing:.7px;margin-bottom:7px;padding-left:4px}
+.str{display:flex;justify-content:space-between;align-items:center;padding:12px 13px;background:var(--paper);border:1px solid var(--bdr-lt);cursor:pointer;transition:background var(--tr)}
+.str:hover{background:var(--cream-md)}.str:first-of-type{border-radius:var(--r-s) var(--r-s) 0 0}.str:last-of-type{border-radius:0 0 var(--r-s) var(--r-s)}.str+.str{border-top:none}
+.str-l{font-size:13px;font-weight:500;color:var(--txt);display:flex;align-items:center;gap:7px}.str-v{font-size:12.5px;color:var(--txt-mt)}
+
+/* ===== ADMIN ===== */
+.adm-bg{display:inline-block;background:var(--maroon);color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;margin-left:5px;vertical-align:middle}
+.atbl{width:100%;border-collapse:collapse;font-size:12px}
+.atbl th{background:var(--cream-dk);padding:9px 8px;text-align:left;font-weight:600;color:var(--txt2);border-bottom:2px solid var(--bdr);font-size:11px}
+.atbl td{padding:9px 8px;border-bottom:1px solid var(--bdr-lt)}.atbl tr:hover td{background:var(--cream)}
+.ds{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px}.ds.on{background:var(--green)}.ds.off{background:var(--txt-lt)}
+
+.orn{text-align:center;color:var(--gold);font-size:13px;letter-spacing:10px;opacity:.35;margin:12px 0;user-select:none}
+.dlot{display:flex;align-items:center;gap:12px;margin:16px 0}.dlot::before,.dlot::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--bdr),transparent)}.dlot span{color:var(--gold);font-size:16px}
+.empty-state{text-align:center;padding:30px 16px;color:var(--txt-mt);font-size:14px;line-height:1.7}
+.empty-state .em-ic{font-size:40px;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<!-- Toast -->
+<div class="toast-w"><div class="toast-m" id="toast"></div></div>
+
+<!-- Celebration Modal -->
+<div class="mod-bg" id="celebMod"><div class="mod-box"><div class="mod-em" id="celE">🎉</div><div class="mod-tt" id="celT"></div><div class="mod-tx" id="celX"></div><button class="btn btn-p" onclick="closeCeleb()">🙏 Continue</button></div></div>
+
+<!-- Edit Profile Modal -->
+<div class="form-bg" id="editMod">
+<div class="form-box">
+<div class="form-tt">✏️ Edit Profile</div>
+<div class="fg"><label>Name</label><input type="text" class="fi" id="edName"></div>
+<div class="fg"><label>Daily Target</label><input type="number" class="fi" id="edTarget" min="1"></div>
+<div class="fg"><label>Yearly Target</label><input type="number" class="fi" id="edYrTarget" min="1"></div>
+<div class="fg"><label>Ram Koti Goal</label><input type="number" class="fi" id="edGoal" min="1"></div>
+<div class="fg"><label>Page Size</label><select class="fi" id="edPgSz"><option value="108">108</option><option value="1008">1,008</option></select></div>
+<div class="fa"><button class="btn btn-g btn-sm" onclick="closeEdit()">Cancel</button><button class="btn btn-p btn-sm" onclick="saveEdits()">Save</button></div>
+</div></div>
+
+<!-- ==================== WELCOME SCREEN ==================== -->
+<div class="screen show" id="scrWelcome">
+<div class="welcome-screen">
+<div class="welcome-card">
+  <div class="welcome-icon">🪷</div>
+  <div class="welcome-title">శ్రీ రామ కోటి</div>
+  <div class="welcome-sub">Your Digital Ram Koti Writing Book</div>
+  <div class="welcome-line"></div>
+
+  <!-- If users exist, show pick list -->
+  <div id="pickSection" style="display:none">
+    <p style="font-size:14px;color:var(--txt2);margin-bottom:12px;font-weight:600;text-align:left">Select your profile:</p>
+    <ul class="pick-list" id="pickList"></ul>
+    <div class="or-div">or create new</div>
+  </div>
+
+  <!-- New user form -->
+  <div id="newUserSection">
+    <p style="font-size:15px;color:var(--maroon);font-weight:600;margin-bottom:16px">Create Your Journey</p>
+    <div class="fg"><label>Name / పేరు</label><input type="text" class="fi" id="nuName" placeholder="Enter your name"></div>
+    <div class="fg"><label>Preferred Writing Language</label>
+      <div class="radio-group">
+        <label class="radio-opt"><input type="radio" name="nuLang" value="en"> English</label>
+        <label class="radio-opt"><input type="radio" name="nuLang" value="te"> తెలుగు</label>
+        <label class="radio-opt"><input type="radio" name="nuLang" value="both" checked> Both</label>
+      </div>
+    </div>
+    <div class="fg"><label>Daily Target</label><input type="number" class="fi" id="nuTarget" value="108" min="1"></div>
+    <button class="btn btn-p btn-f btn-lg" onclick="createUser()" style="margin-top:8px">🙏 Start My Journey</button>
+  </div>
+
+  <button class="btn btn-g btn-f" style="margin-top:12px" onclick="guestStart()">Continue as Guest</button>
+</div>
+</div>
+</div>
+
+<!-- ==================== APP SHELL ==================== -->
+<div class="screen" id="scrApp">
+
+<header class="hdr"><div class="hdr-in">
+<div class="hdr-brand"><div class="hdr-logo">🙏</div><div class="hdr-t"><h1>శ్రీ రామ కోటి</h1><p id="hdrSub"></p></div></div>
+<div class="hdr-acts">
+<select class="usr-sel" id="usrSel" onchange="switchUser(this.value)"></select>
+<button class="hdr-btn" id="lnBtn" onclick="togLang()">EN</button>
+<button class="hdr-btn" onclick="goWelcome()">👤</button>
+</div>
+</div></header>
+
+<nav class="dnav"><div class="dnav-in">
+<div class="dnav-i on" data-p="home" onclick="nav('home')">🏠 Home</div>
+<div class="dnav-i" data-p="write" onclick="nav('write')">✍️ Write</div>
+<div class="dnav-i" data-p="today" onclick="nav('today')">📅 Today</div>
+<div class="dnav-i" data-p="history" onclick="nav('history')">📖 History</div>
+<div class="dnav-i" data-p="ramkoti" onclick="nav('ramkoti')">🌺 Ram Koti</div>
+<div class="dnav-i" data-p="profile" onclick="nav('profile')">👤 Profile</div>
+<div class="dnav-i" data-p="admin" onclick="nav('admin')">⚙️ Admin</div>
+</div></nav>
+
+<!-- HOME -->
+<div class="screen show" id="pg-home"><div class="container">
+<section class="hero"><div class="hero-ic">🪷</div><h1>శ్రీ రామ కోటి</h1><h2>Your Digital Ram Koti Writing Book</h2><div class="hero-ln"></div>
+<p class="hero-d" id="heroD"></p>
+<div class="hero-btns"><button class="btn btn-p btn-lg" onclick="nav('write')">✍️ Start Writing</button><button class="btn btn-o btn-lg" onclick="nav('ramkoti')">📊 My Progress</button></div>
+</section>
+<div class="qbox" id="quoteEl"></div>
+<div class="cd at"><div class="cd-h">🌺 <span id="hGreet"></span></div>
+<div class="gst">
+<div class="sb"><div class="sv cs" id="hTdy">0</div><div class="sl">Today / ఈరోజు</div></div>
+<div class="sb"><div class="sv cg" id="hYr">0</div><div class="sl">This Year</div></div>
+<div class="sb"><div class="sv ck" id="hStk">0</div><div class="sl">Streak / వరుస</div></div>
+<div class="sb"><div class="sv cm" id="hLf">0</div><div class="sl">Lifetime</div></div>
+</div></div>
+<div class="cd at"><div class="cd-h">📅 Year Progress</div>
+<div class="pw"><div class="pbg lg"><div class="pfl lg" id="hYrBar" style="width:0%"><span id="hYrBarT">0%</span></div></div><div class="pm"><span id="hYrDn">0</span><span id="hYrGl"></span></div></div></div>
+<div class="cd at"><div class="cd-h">🌺 Lifetime Goal</div>
+<div class="pw"><div class="pbg lg"><div class="pfl lg" id="hLfBar" style="width:0%"><span id="hLfBarT">0%</span></div></div><div class="pm"><span id="hLfDn">0</span><span id="hLfGl"></span></div></div></div>
+<div class="orn">✦ ✦ ✦</div>
+</div></div>
+
+<!-- WRITE -->
+<div class="screen" id="pg-write"><div class="container">
+<div class="tabs"><button class="tb on sf" id="wTap" onclick="wMode('tap')">🖐️ Tap</button><button class="tb" id="wType" onclick="wMode('type')">⌨️ Type</button><button class="tb" id="wMala" onclick="wMode('mala')">📿 Mala 108</button></div>
+<div class="g2w"><div>
+<div class="nb"><div class="nb-hd"><span class="nb-ht">📖 శ్రీ రామ కోటి</span><span class="nb-pb" id="pgBdg">Page 1</span></div>
+<div class="nb-bd">
+<div class="tpa" id="wTapA"><div><div class="tp-lb">Session</div><div class="tp-nm" id="sesN">0</div></div><button class="tap-b" id="tapBtn" onpointerdown="doTap(event)"><span class="ti">🙏</span><span class="tn">శ్రీ రామ</span><span class="ts">Tap</span></button></div>
+<div class="tya" id="wTyA" style="display:none"><textarea class="tyf" id="tyFld" placeholder="sri rama / శ్రీ రామ — Type in English or Telugu..." oninput="cntTyp()"></textarea><div class="tyst"><span>Detected: <strong id="tyC">0</strong> Namams</span><button class="btn btn-p btn-sm" onclick="savTyp()">Save Writing</button></div></div>
+<div class="tpa" id="wMlA" style="display:none"><div class="mala-s"><div class="mala-ct"><span id="mlN">0</span> / 108</div><div class="mala-lb">Mala / మాల</div><div class="mala-bd" id="mlBds"></div><button class="tap-b" style="margin-top:16px" onpointerdown="doMala(event)"><span class="ti">📿</span><span class="tn">శ్రీ రామ</span><span class="ts">Mala</span></button></div></div>
+</div>
+<div class="nb-ft"><button class="pnb" onclick="chPg(-1)">◀ Prev</button><button class="btn btn-p btn-sm" onclick="savSession()">💾 Save Session</button><button class="pnb" onclick="chPg(1)">Next ▶</button></div>
+</div>
+<div class="ws-bar"><div class="ws"><div class="wsv" id="wsSes">0</div><div class="wsl">Session</div></div><div class="ws"><div class="wsv" id="wsTdy">0</div><div class="wsl">Today</div></div><div class="ws"><div class="wsv" id="wsYr">0</div><div class="wsl">Year</div></div><div class="ws"><div class="wsv" id="wsLf">0</div><div class="wsl">Lifetime</div></div></div>
+</div><div>
+<div class="cd at"><div class="cd-h">📊 Today's Progress</div><div class="pw"><div class="pbg"><div class="pfl" id="wDBar" style="width:0%"></div></div><div class="pm"><span id="wDDn">0</span><span id="wDTg"></span></div></div></div>
+<div class="cd"><div class="cd-h">💡 Writing Tips</div><p style="font-size:12.5px;color:var(--txt-mt);line-height:1.7">• <b>Tap Mode:</b> +1 per tap<br>• <b>Type Mode:</b> Type "sri rama" or "శ్రీ రామ" — both detected<br>• <b>Mala Mode:</b> 108 beads per round<br>• Mixed English + Telugu supported<br>• Save to record your session</p></div>
+</div></div>
+</div></div>
+
+<!-- TODAY -->
+<div class="screen" id="pg-today"><div class="container">
+<div class="th-c"><div class="th-dt" id="tDt"></div><div class="th-bn" id="tBN">0</div><div class="th-sb">శ్రీ రామ written today</div>
+<div class="pw" style="max-width:400px;margin:12px auto 0"><div class="pbg"><div class="pfl" id="tDBar" style="width:0%"></div></div><div class="pm"><span id="tDDn">0</span><span id="tDRm">0 remaining</span></div></div>
+<div class="th-tl">Target: <strong id="tTgt">0</strong> | Remaining: <strong id="tRem">0</strong></div></div>
+<div class="g2"><div>
+<div class="cd at"><div class="cd-h">📊 Stats</div><div class="gst" style="grid-template-columns:repeat(2,1fr)">
+<div class="sb"><div class="sv cs" id="tSes">0</div><div class="sl">Sessions</div></div>
+<div class="sb"><div class="sv cg" id="tAvg">0</div><div class="sl">Avg/Session</div></div>
+<div class="sb"><div class="sv ck" id="tStk">0</div><div class="sl">Streak</div></div>
+<div class="sb"><div class="sv cb" id="tPct">0%</div><div class="sl">Target Met</div></div>
+</div></div>
+<div class="cd"><div class="cd-h">🕐 Sessions</div><ul class="ss-l" id="tSL"></ul></div>
+</div><div>
+<div class="cd at"><div class="cd-h">📅 Calendar</div>
+<div class="cl-h"><button class="cl-nb" onclick="mvCal(-1)">◀</button><span class="cl-mt" id="clMT"></span><button class="cl-nb" onclick="mvCal(1)">▶</button></div>
+<div class="cl-g" id="clG"></div></div>
+</div></div>
+</div></div>
+
+<!-- HISTORY -->
+<div class="screen" id="pg-history"><div class="container">
+<div class="yr-sel" id="hYrSel"></div>
+<div class="tabs"><button class="tb on mr" id="htD" onclick="hTab('daily')">📋 Daily</button><button class="tb" id="htW" onclick="hTab('weekly')">📊 Weekly</button><button class="tb" id="htM" onclick="hTab('monthly')">📅 Monthly</button></div>
+<div class="g2"><div>
+<div class="cd at"><div class="cd-h">📊 Summary</div><div class="gst" style="grid-template-columns:repeat(2,1fr)">
+<div class="sb"><div class="sv cs" id="hsTot">0</div><div class="sl">Written (<span id="hsYL"></span>)</div></div>
+<div class="sb"><div class="sv cg" id="hsAvg">0</div><div class="sl">Daily Avg</div></div>
+<div class="sb"><div class="sv ck" id="hsAct">0</div><div class="sl">Active Days</div></div>
+<div class="sb"><div class="sv cb" id="hsBst">0</div><div class="sl">Best Day</div></div>
+</div></div>
+<div class="cd"><div class="cd-h">📈 Chart</div><div class="bars" id="hChart"></div></div>
+</div><div>
+<div class="cd"><div class="cd-h" id="hLTt"></div><ul class="hl" id="hLst"></ul></div>
+</div></div>
+</div></div>
+
+<!-- RAM KOTI -->
+<div class="screen" id="pg-ramkoti"><div class="container">
+<div class="kh"><div class="kh-ic">🙏</div><div class="kh-tt">శ్రీ రామ కోటి లక్ష్యం</div><div class="kh-en">Lifetime Ram Koti Goal</div>
+<div class="kh-gn" id="rkGN">1,00,00,000</div>
+<div class="kh-pc" id="rkPc">0.0000%</div><div class="kh-pl">Completed</div>
+<div class="pw" style="max-width:460px;margin:18px auto 0"><div class="pbg lg"><div class="pfl lg" id="rkBar" style="width:0%"><span id="rkBarT">0%</span></div></div></div></div>
+<div class="cd at"><div class="cd-h">📊 Goal Breakdown</div><div class="gst">
+<div class="sb"><div class="sv cs" id="rkDn">0</div><div class="sl">Done</div></div>
+<div class="sb"><div class="sv cb" id="rkRm">0</div><div class="sl">Remaining</div></div>
+<div class="sb"><div class="sv cg" id="rkDA">0</div><div class="sl">Daily Avg</div></div>
+<div class="sb"><div class="sv ck" id="rkETA">∞</div><div class="sl">Est. Days</div></div>
+</div></div>
+<div class="cd at"><div class="cd-h">📅 Yearly Contributions</div><div id="rkYC"></div></div>
+<div class="dlot"><span>🌺</span></div>
+<div class="cd at"><div class="cd-h">🏆 Milestones</div><ul class="ms-ul" id="msL"></ul></div>
+<div class="cd"><div class="cd-h">🗓️ Journey Stats</div><div class="gst" style="grid-template-columns:repeat(2,1fr)">
+<div class="sb"><div class="sv cs" id="rkSt">-</div><div class="sl">Start Date</div></div>
+<div class="sb"><div class="sv cg" id="rkAD">0</div><div class="sl">Active Days</div></div>
+<div class="sb"><div class="sv ck" id="rkYA">0</div><div class="sl">Years</div></div>
+<div class="sb"><div class="sv cb" id="rkLS">0</div><div class="sl">Longest Streak</div></div>
+</div></div>
+</div></div>
+
+<!-- PROFILE -->
+<div class="screen" id="pg-profile"><div class="container">
+<div class="cd"><div class="p-top"><div class="p-av">🙏</div><div class="p-nm" id="pNm"></div><div class="p-sc" id="pSc"></div>
+<button class="btn btn-o btn-sm" style="margin-top:12px" onclick="openEdit()">✏️ Edit Profile</button></div></div>
+<div class="g2" style="margin-top:16px"><div>
+<div class="cd at"><div class="cd-h">📊 Lifetime Stats</div><div class="gst" style="grid-template-columns:repeat(2,1fr)">
+<div class="sb"><div class="sv cs" id="pTot">0</div><div class="sl">Written</div></div>
+<div class="sb"><div class="sv cg" id="pAct">0</div><div class="sl">Active Days</div></div>
+<div class="sb"><div class="sv ck" id="pCS">0</div><div class="sl">Streak</div></div>
+<div class="sb"><div class="sv cb" id="pLS">0</div><div class="sl">Longest</div></div>
+</div></div>
+<div class="cd at"><div class="cd-h">📅 Year-by-Year</div><div id="pYrT"></div></div>
+</div><div>
+<div class="ssg"><div class="ssg-t">⚙️ Settings</div>
+<div class="str" onclick="openEdit()"><span class="str-l">👤 Name</span><span class="str-v" id="sNm"></span></div>
+<div class="str" onclick="openEdit()"><span class="str-l">🎯 Daily Target</span><span class="str-v" id="sDT"></span></div>
+<div class="str" onclick="openEdit()"><span class="str-l">📅 Year Target</span><span class="str-v" id="sYT"></span></div>
+<div class="str" onclick="openEdit()"><span class="str-l">🌺 Goal</span><span class="str-v" id="sGl"></span></div>
+<div class="str" onclick="togLang()"><span class="str-l">🌐 Language</span><span class="str-v" id="sLn"></span></div>
+</div>
+<div class="ssg" style="margin-top:14px"><div class="ssg-t">🔧 Account</div>
+<div class="str" onclick="expData()"><span class="str-l">📤 Export</span><span class="str-v">›</span></div>
+<div class="str" onclick="rstData()"><span class="str-l" style="color:var(--red)">🗑️ Reset</span><span class="str-v">›</span></div>
+<div class="str" onclick="goWelcome()"><span class="str-l">🔄 Switch User</span><span class="str-v">›</span></div>
+</div>
+</div></div>
+</div></div>
+
+<!-- ADMIN -->
+<div class="screen" id="pg-admin"><div class="container">
+<div class="cd at"><div class="cd-h">⚙️ Admin <span class="adm-bg">ADMIN</span></div>
+<div class="gst">
+<div class="sb"><div class="sv cs" id="aUsr">0</div><div class="sl">Users</div></div>
+<div class="sb"><div class="sv ck" id="aAct">0</div><div class="sl">Active Today</div></div>
+<div class="sb"><div class="sv cg" id="aTdW">0</div><div class="sl">Today Writes</div></div>
+<div class="sb"><div class="sv cb" id="aToW">0</div><div class="sl">All-Time</div></div>
+</div></div>
+<div class="cd"><div class="cd-h">👤 Users</div><div style="overflow-x:auto"><table class="atbl"><thead><tr><th>User</th><th>Status</th><th>Today</th><th>Year</th><th>Lifetime</th><th>Goal</th><th>Streak</th></tr></thead><tbody id="aUTbl"></tbody></table></div></div>
+</div></div>
+
+<nav class="bnav">
+<div class="bnav-i on" data-p="home" onclick="nav('home')"><span class="bi">🏠</span><span>Home</span></div>
+<div class="bnav-i" data-p="today" onclick="nav('today')"><span class="bi">📅</span><span>Today</span></div>
+<div class="bnav-i wctr" data-p="write" onclick="nav('write')"><span class="bi">✍️</span></div>
+<div class="bnav-i" data-p="history" onclick="nav('history')"><span class="bi">📖</span><span>History</span></div>
+<div class="bnav-i" data-p="ramkoti" onclick="nav('ramkoti')"><span class="bi">🌺</span><span>Koti</span></div>
+</nav>
+</div><!-- /scrApp -->
+
+<script>
+/*=============================================================================
+  RAM KOTI DATA ENGINE
+  RULES:
+  - No hard-coded stats. New user = all zeros.
+  - Every number derived from user's actual LocalStorage data.
+  - USER × YEAR = personalized experience.
+  - Lifetime = sum of all years.
+  - Years never deleted on rollover.
+=============================================================================*/
+const SK='ramKotiDB_v4', DEFGOAL=10000000;
+const MILESTONES=[
+  {n:'🌱 First Mala',t:108,e:'🌱',d:'108'},
+  {n:'📿 Sahasra',t:1000,e:'📿',d:'1,000'},
+  {n:'🌟 5,000',t:5000,e:'🌟',d:'5,000'},
+  {n:'🔥 10,000',t:10000,e:'🔥',d:'10,000'},
+  {n:'💎 50,000',t:50000,e:'💎',d:'50,000'},
+  {n:'🏆 1,00,000',t:100000,e:'🏆',d:'1,00,000'},
+  {n:'👑 5,00,000',t:500000,e:'👑',d:'5,00,000'},
+  {n:'🌺 10,00,000',t:1000000,e:'🌺',d:'10,00,000'},
+  {n:'🙏 50,00,000',t:5000000,e:'🙏',d:'50,00,000'},
+  {n:'✨ RAM KOTI!',t:10000000,e:'✨',d:'1,00,00,000'}
+];
+const QTE=['"రామ నామం సకల పాపాలను హరిస్తుంది." — తులసీదాస్','"ప్రతి శ్రీ రామ ఒక దీపం."','"కలియుగంలో రామ నామం అత్యంత శక్తివంతం."'];
+const QEN=['"The name of Ram destroys all sins." — Tulsidas','"Every Sri Ram is a lamp within."','"Ram Naam is mightiest in Kali Yuga."'];
+
+// Helpers
+function uid(){return 'u'+Date.now()+Math.random().toString(36).slice(2,6)}
+function tdy(){return new Date().toISOString().split('T')[0]}
+function cyr(){return String(new Date().getFullYear())}
+function f(n){return n.toLocaleString('en-IN')}
+function sd(s){const d=new Date(s);return d.getDate()+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()]}
+function fd(s){return new Date(s).toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}
+function $(id){return document.getElementById(id)}
+
+// Database
+function loadDB(){try{const r=localStorage.getItem(SK);if(r)return JSON.parse(r)}catch(e){}return{users:{},active:null,meta:{v:'4.0'}}}
+function saveDB(){try{localStorage.setItem(SK,JSON.stringify(DB))}catch(e){console.error(e)}}
+let DB=loadDB();
+
+function mkProfile(name,target,lang,goal){return{name:name||'భక్తుడు',dailyTarget:target||108,lang:lang||'both',pageSize:108,goal:goal||DEFGOAL,created:tdy()}}
+function mkLifetime(){return{total:0,start:tdy(),celebrated:[],longestStreak:0}}
+function mkYear(yr,dt){return{year:yr,count:0,yearTarget:(dt||108)*365,dailyTarget:dt||108,days:{},sessions:[],page:1}}
+function ensureYr(u,yr){if(!u.years)u.years={};if(!u.years[yr]){u.years[yr]=mkYear(yr,u.profile.dailyTarget);saveDB()}return u.years[yr]}
+
+// Active user shortcuts
+function U(){return DB.users[DB.active]}
+function YD(yr){return ensureYr(U(),yr||cyr())}
+function goal(){return U().profile.goal||DEFGOAL}
+function tdyCnt(){const y=YD();return(y.days[tdy()]||{}).count||0}
+function yrCnt(yr){return YD(yr).count||0}
+function lfCnt(){return U().lifetime.total}
+
+function addCnt(n){
+  const t=tdy(),yr=cyr(),u=U(),yd=ensureYr(u,yr);
+  if(!yd.days[t])yd.days[t]={count:0,sessions:0};
+  yd.days[t].count+=n;yd.count+=n;u.lifetime.total+=n;
+  saveDB();
+}
+
+// STREAK — computed from actual data, never hard-coded
+function calcStreak(){
+  const u=U();if(!u)return 0;let s=0;const now=new Date();
+  for(let i=0;i<400;i++){
+    const d=new Date(now);d.setDate(d.getDate()-i);const ds=d.toISOString().split('T')[0];const yr=String(d.getFullYear());
+    const yd=u.years&&u.years[yr];
+    if(yd&&yd.days[ds]&&yd.days[ds].count>0)s++;else if(i>0)break;
+  }return s;
+}
+function calcLongest(){
+  const u=U();if(!u)return 0;let all=[];
+  Object.values(u.years||{}).forEach(yd=>{Object.keys(yd.days||{}).forEach(d=>{if(yd.days[d].count>0)all.push(d)})});
+  all.sort();if(!all.length)return 0;let mx=1,cur=1;
+  for(let i=1;i<all.length;i++){const diff=(new Date(all[i])-new Date(all[i-1]))/864e5;cur=diff===1?cur+1:1;mx=Math.max(mx,cur)}
+  u.lifetime.longestStreak=Math.max(mx,cur);return u.lifetime.longestStreak;
+}
+function actDays(yr){
+  if(yr){const yd=YD(yr);return Object.values(yd.days||{}).filter(d=>d.count>0).length}
+  let t=0;Object.values(U().years||{}).forEach(yd=>{t+=Object.values(yd.days||{}).filter(d=>d.count>0).length});return t;
+}
+function dAvg(yr){const a=actDays(yr);const c=yr?yrCnt(yr):lfCnt();return a>0?Math.round(c/a):0}
+function bDay(yr){let b=0;const src=yr?{[yr]:YD(yr)}:U().years||{};Object.values(src).forEach(yd=>{Object.values(yd.days||{}).forEach(d=>{if(d.count>b)b=d.count})});return b}
+function uYears(){return Object.keys(U().years||{}).sort()}
+
+/*=============================================================================
+  NAMAM DETECTION — English + Telugu + Mixed
+=============================================================================*/
+function detectNamams(text){
+  if(!text||!text.trim())return 0;
+  let count=0;
+  // Telugu: శ్రీ రామ or శ్రీరామ
+  const teRegex=/శ్రీ\s*రామ/g;
+  const teMatches=text.match(teRegex);
+  if(teMatches)count+=teMatches.length;
+  // Remove Telugu matches to avoid double counting
+  let remaining=text.replace(teRegex,'');
+  // English: sri rama (case insensitive, flexible spacing)
+  const enRegex=/sri\s+rama/gi;
+  const enMatches=remaining.match(enRegex);
+  if(enMatches)count+=enMatches.length;
+  return count;
+}
+
+/*=============================================================================
+  SESSION STATE — not stored, resets on page load
+=============================================================================*/
+let sesC=0,wrM='tap',htTab='daily',calDt=new Date(),lang='both',malaC=0,hVYr='';
+
+/*=============================================================================
+  SCREENS & NAVIGATION
+=============================================================================*/
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('show'));
+  $(id).classList.add('show');
+}
+
+function initApp(){
+  const users=Object.keys(DB.users);
+  if(users.length===0){
+    showScreen('scrWelcome');$('pickSection').style.display='none';$('newUserSection').style.display='';
+    document.body.classList.remove('has-bnav');
+  }else if(!DB.active||!DB.users[DB.active]){
+    showScreen('scrWelcome');renderPick();
+    document.body.classList.remove('has-bnav');
+  }else{
+    enterApp();
+  }
+}
+
+function renderPick(){
+  const users=Object.entries(DB.users);
+  if(users.length>0){
+    $('pickSection').style.display='';
+    $('pickList').innerHTML=users.map(([id,u])=>
+      `<li class="pick-card" onclick="loginAs('${id}')"><div class="pick-av">🙏</div><div class="pick-info"><div class="pick-nm">${u.profile.name}</div><div class="pick-dt">Since ${sd(u.profile.created)} · ${f(u.lifetime.total)} written</div></div><div class="pick-cnt">${f(u.lifetime.total)}</div></li>`
+    ).join('');
+  }else{$('pickSection').style.display='none'}
+  $('newUserSection').style.display='';
+}
+
+function createUser(){
+  const nm=$('nuName').value.trim();
+  if(!nm){toast('⚠️ Please enter your name');return}
+  const tgt=parseInt($('nuTarget').value)||108;
+  const langEl=document.querySelector('input[name="nuLang"]:checked');
+  const lng=langEl?langEl.value:'both';
+  const id=uid();
+  // ALL ZEROS — no fake data
+  DB.users[id]={profile:mkProfile(nm,tgt,lng,DEFGOAL),lifetime:mkLifetime(),years:{}};
+  ensureYr(DB.users[id],cyr());
+  DB.active=id;saveDB();enterApp();
+  toast('🙏 Welcome, '+nm+'! Your journey begins now.');
+}
+
+function guestStart(){
+  const id=uid();
+  DB.users[id]={profile:mkProfile('Guest',108,'both',DEFGOAL),lifetime:mkLifetime(),years:{}};
+  ensureYr(DB.users[id],cyr());
+  DB.active=id;saveDB();enterApp();
+  toast('🙏 Welcome, Guest! Start writing శ్రీ రామ.');
+}
+
+function loginAs(id){DB.active=id;saveDB();enterApp()}
+function goWelcome(){showScreen('scrWelcome');renderPick();document.body.classList.remove('has-bnav');$('scrApp').classList.remove('show')}
+
+function enterApp(){
+  showScreen('scrApp');document.body.classList.add('has-bnav');
+  lang=U().profile.lang||'both';
+  $('lnBtn').textContent=lang==='te'?'EN':lang==='en'?'తె':'EN/తె';
+  hVYr=cyr();
+  populateUserSel();
+  refreshAll();
+  nav('home');
+  const hr=new Date().getHours();
+  const g=hr<12?'🌅 Good Morning!':hr<17?'🌞 Good Afternoon!':'🌙 Good Evening!';
+  setTimeout(()=>toast(g+' '+U().profile.name),300);
+}
+
+function switchUser(id){DB.active=id;saveDB();sesC=0;malaC=0;hVYr=cyr();refreshAll();toast('🔄 Switched to '+U().profile.name)}
+function populateUserSel(){
+  $('usrSel').innerHTML=Object.entries(DB.users).map(([id,u])=>
+    `<option value="${id}" ${id===DB.active?'selected':''}>${u.profile.name}</option>`).join('');
+}
+
+function nav(pg){
+  // Hide all pages inside app
+  document.querySelectorAll('#scrApp > .screen').forEach(s=>s.classList.remove('show'));
+  const el=$('pg-'+pg);if(el)el.classList.add('show');
+  document.querySelectorAll('.dnav-i').forEach(i=>i.classList.toggle('on',i.dataset.p===pg));
+  document.querySelectorAll('.bnav-i').forEach(i=>i.classList.toggle('on',i.dataset.p===pg));
+  refreshAll();window.scrollTo({top:0,behavior:'instant'});
+}
+
+/*=============================================================================
+  REFRESH ALL — Every value computed from actual stored data
+=============================================================================*/
+function refreshAll(){if(!U())return;rHome();rWrite();rToday();rHist();rKoti();rProf();rAdmin()}
+
+// HOME
+function rHome(){
+  const u=U(),tc=tdyCnt(),yc=yrCnt(),lf=lfCnt(),st=calcStreak(),tgt=u.profile.dailyTarget,g=goal();
+  $('hGreet').textContent=u.profile.name+"'s Journey";
+  $('hdrSub').textContent=u.profile.name+' · '+cyr();
+  $('heroD').textContent='Write Sri Rama Namam digitally. Your personal journey, your own goal.';
+  $('hTdy').textContent=f(tc);$('hYr').textContent=f(yc);$('hStk').textContent=st;$('hLf').textContent=f(lf);
+  const yd=YD(),yt=yd.yearTarget||tgt*365;
+  const yp=yt>0?Math.min((yc/yt)*100,100):0;
+  $('hYrBar').style.width=yp+'%';$('hYrBarT').textContent=Math.round(yp)+'%';
+  $('hYrDn').textContent=f(yc);$('hYrGl').textContent='Target: '+f(yt);
+  const lp=g>0?Math.min((lf/g)*100,100):0;
+  $('hLfBar').style.width=lp+'%';$('hLfBarT').textContent=lp.toFixed(2)+'%';
+  $('hLfDn').textContent=f(lf);$('hLfGl').textContent='🎯 '+f(g);
+  const q=lang==='en'?QEN:QTE;$('quoteEl').textContent=q[Math.floor(Math.random()*q.length)];
+}
+
+// WRITE
+function wMode(m){wrM=m;
+  $('wTap').className='tb'+(m==='tap'?' on sf':'');$('wType').className='tb'+(m==='type'?' on sf':'');$('wMala').className='tb'+(m==='mala'?' on sf':'');
+  $('wTapA').style.display=m==='tap'?'flex':'none';$('wTyA').style.display=m==='type'?'block':'none';$('wMlA').style.display=m==='mala'?'flex':'none';
+  if(m==='mala')rMlBds();}
+
+function doTap(ev){sesC++;addCnt(1);$('sesN').textContent=f(sesC);rWrite();showFlt(ev);chkMs()}
+function showFlt(ev){const e=document.createElement('div');e.className='flt';e.textContent='శ్రీ రామ 🙏';
+  const x=ev.clientX||ev.touches?.[0]?.clientX||innerWidth/2,y=ev.clientY||ev.touches?.[0]?.clientY||innerHeight/2;
+  e.style.left=(x-36)+'px';e.style.top=(y-22)+'px';document.body.appendChild(e);
+  requestAnimationFrame(()=>e.classList.add('go'));setTimeout(()=>e.remove(),1000)}
+
+function cntTyp(){$('tyC').textContent=detectNamams($('tyFld').value)}
+
+function savTyp(){
+  const c=detectNamams($('tyFld').value);
+  if(c>0){addCnt(c);sesC+=c;$('tyFld').value='';$('tyC').textContent='0';rWrite();toast('✅ '+c+' Namams saved!');chkMs()}
+  else toast('⚠️ Type "sri rama" or "శ్రీ రామ" to count');}
+
+function doMala(ev){if(malaC>=108){toast('📿 Mala complete! New round.');malaC=0}malaC++;sesC++;addCnt(1);$('mlN').textContent=malaC;rMlBds();showFlt(ev);rWrite();
+  if(malaC===108)showCeleb('📿','Mala Complete!','108 beads of శ్రీ రామ. 🙏');chkMs()}
+function rMlBds(){let h='';for(let i=0;i<108;i++)h+='<div class="mbd'+(i<malaC?' fl':'')+'"></div>';$('mlBds').innerHTML=h}
+
+function savSession(){if(!sesC){toast('⚠️ Nothing to save');return}
+  const t=tdy(),yd=YD(),now=new Date(),tm=now.getHours().toString().padStart(2,'0')+':'+now.getMinutes().toString().padStart(2,'0');
+  yd.sessions.push({date:t,time:tm,count:sesC});
+  if(!yd.days[t])yd.days[t]={count:0,sessions:0};yd.days[t].sessions=(yd.days[t].sessions||0)+1;
+  saveDB();toast('✅ Session: '+f(sesC)+' Namams');sesC=0;malaC=0;$('sesN').textContent='0';$('mlN').textContent='0';rMlBds();rWrite()}
+
+function chPg(d){const yd=YD();yd.page=Math.max(1,(yd.page||1)+d);$('pgBdg').textContent='Page '+yd.page;saveDB()}
+
+function rWrite(){
+  const tc=tdyCnt(),tgt=U().profile.dailyTarget;
+  $('wsSes').textContent=f(sesC);$('wsTdy').textContent=f(tc);$('wsYr').textContent=f(yrCnt());$('wsLf').textContent=f(lfCnt());
+  $('pgBdg').textContent='Page '+(YD().page||1);
+  const dp=tgt>0?Math.min((tc/tgt)*100,100):0;$('wDBar').style.width=dp+'%';
+  $('wDDn').textContent=f(tc);$('wDTg').textContent='Target: '+f(tgt)}
+
+// TODAY
+function rToday(){
+  const tc=tdyCnt(),tgt=U().profile.dailyTarget,rem=Math.max(0,tgt-tc),pct=tgt>0?Math.min((tc/tgt)*100,100):0;
+  $('tDt').textContent=fd(tdy());$('tBN').textContent=f(tc);
+  $('tDBar').style.width=pct+'%';$('tDDn').textContent=f(tc)+' done';$('tDRm').textContent=f(rem)+' remaining';
+  $('tTgt').textContent=f(tgt);$('tRem').textContent=f(rem);
+  const yd=YD(),tSes=yd.sessions.filter(s=>s.date===tdy()),ns=tSes.length;
+  $('tSes').textContent=ns;$('tAvg').textContent=ns>0?f(Math.round(tc/ns)):'0';
+  $('tStk').textContent=calcStreak();$('tPct').textContent=Math.round(pct)+'%';
+  if(tSes.length===0)$('tSL').innerHTML='<li class="ss-i"><span class="ss-tm" style="font-style:italic">No sessions yet. Start writing! 🙏</span></li>';
+  else $('tSL').innerHTML=tSes.map((s,i)=>`<li class="ss-i"><div><b>Session ${i+1}</b> <span class="ss-tm">· ${s.time}</span></div><span class="ss-ct">${f(s.count)} × శ్రీ రామ</span></li>`).join('');
+  rCal();}
+
+function rCal(){
+  const y=calDt.getFullYear(),m=calDt.getMonth(),mns=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  $('clMT').textContent=mns[m]+' '+y;
+  const yr=String(y),yd=(U().years||{})[yr],first=new Date(y,m,1).getDay(),dim=new Date(y,m+1,0).getDate(),ts=tdy(),tgt=U().profile.dailyTarget;
+  let h='';['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(d=>h+='<div class="cl-dh">'+d+'</div>');
+  for(let i=0;i<first;i++)h+='<div class="cl-c emp"></div>';
+  for(let d=1;d<=dim;d++){const ds=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const cnt=yd&&yd.days&&yd.days[ds]?yd.days[ds].count:0;
+    let c='cl-c';if(ds===ts)c+=' td';if(cnt>0){c+=' has';if(cnt>=tgt)c+=' hi'}
+    h+=`<div class="${c}" title="${ds}: ${cnt}">${d}</div>`}
+  $('clG').innerHTML=h}
+function mvCal(d){calDt.setMonth(calDt.getMonth()+d);rCal()}
+
+// HISTORY
+function hTab(t){htTab=t;$('htD').className='tb'+(t==='daily'?' on mr':'');$('htW').className='tb'+(t==='weekly'?' on mr':'');$('htM').className='tb'+(t==='monthly'?' on mr':'');rHist()}
+
+function rHist(){
+  const yrs=uYears();const isAll=hVYr==='all';
+  $('hYrSel').innerHTML='<span class="yr-lb">Year:</span>'+['all',...yrs].map(y=>`<button class="yr-b${hVYr===y?' on':''}" onclick="hVYr='${y}';rHist()">${y==='all'?'Lifetime':y}</button>`).join('');
+  $('hsYL').textContent=isAll?'Lifetime':hVYr;
+  let allD={};
+  if(isAll)Object.values(U().years||{}).forEach(yd=>{Object.entries(yd.days||{}).forEach(([d,v])=>{allD[d]=v})});
+  else allD=(YD(hVYr).days||{});
+  const totC=Object.values(allD).reduce((a,d)=>a+(d.count||0),0);
+  const actD=Object.values(allD).filter(d=>(d.count||0)>0).length;
+  const avg=actD>0?Math.round(totC/actD):0;
+  let best=0;Object.values(allD).forEach(d=>{if((d.count||0)>best)best=d.count||0});
+  $('hsTot').textContent=f(totC);$('hsAvg').textContent=f(avg);$('hsAct').textContent=actD;$('hsBst').textContent=f(best);
+
+  const entries=Object.entries(allD).filter(([,v])=>(v.count||0)>0);
+  if(entries.length===0){
+    $('hLTt').textContent='📋 History';
+    $('hLst').innerHTML='<div class="empty-state"><div class="em-ic">📝</div>No writing recorded yet.<br>Start your first Ram Namam today. 🙏</div>';
+    $('hChart').innerHTML='<div class="empty-state" style="padding:20px">No data to chart yet.</div>';
+    return;
+  }
+
+  if(htTab==='daily'){$('hLTt').textContent='📋 Daily History';
+    const ds=Object.keys(allD).filter(d=>(allD[d].count||0)>0).sort().reverse().slice(0,14);
+    rHList(ds.map(d=>({l:sd(d),s:d,c:allD[d].count})));
+    rBars(ds.slice(0,7).reverse().map(d=>({v:allD[d].count,l:new Date(d).getDate().toString()})))}
+  else if(htTab==='weekly'){$('hLTt').textContent='📊 Weekly';
+    const wk=gWkly(allD);rHList(wk.slice(0,8).map(w=>({l:w.label,s:w.days+' days',c:w.total})));
+    rBars(wk.slice(0,7).reverse().map(w=>({v:w.total,l:'W'+w.wn})))}
+  else{$('hLTt').textContent='📅 Monthly';
+    const mo=gMnth(allD);rHList(mo.slice(0,12).map(m=>({l:m.label,s:m.days+' days',c:m.total})));
+    rBars(mo.slice(0,6).reverse().map(m=>({v:m.total,l:m.short})))}
+}
+
+function gWkly(days){const mp={};Object.entries(days).filter(([,v])=>(v.count||0)>0).forEach(([dt,v])=>{const d=new Date(dt);const ws=new Date(d);ws.setDate(d.getDate()-d.getDay());const k=ws.toISOString().split('T')[0];
+  if(!mp[k]){const wn=Math.ceil((d.getDate()+new Date(d.getFullYear(),d.getMonth(),1).getDay())/7);mp[k]={total:0,days:0,label:'Week of '+sd(k),wn,k}}
+  mp[k].total+=(v.count||0);if((v.count||0)>0)mp[k].days++});return Object.values(mp).sort((a,b)=>b.k.localeCompare(a.k))}
+
+function gMnth(days){const mp={};const mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  Object.entries(days).filter(([,v])=>(v.count||0)>0).forEach(([dt,v])=>{const k=dt.substring(0,7);if(!mp[k]){const[y,m]=k.split('-');mp[k]={total:0,days:0,label:mn[parseInt(m)-1]+' '+y,short:mn[parseInt(m)-1],k}}
+  mp[k].total+=(v.count||0);if((v.count||0)>0)mp[k].days++});return Object.values(mp).sort((a,b)=>b.k.localeCompare(a.k))}
+
+function rHList(items){
+  if(!items.length){$('hLst').innerHTML='<div class="empty-state"><div class="em-ic">📝</div>No data yet.</div>';return}
+  $('hLst').innerHTML=items.map(i=>`<li class="hi"><div><div class="hdt">${i.l}</div><div class="hds">${i.s}</div></div><div class="hct">${f(i.c)}</div></li>`).join('')}
+
+function rBars(data){
+  if(!data.length){$('hChart').innerHTML='';return}
+  const mx=Math.max(...data.map(d=>d.v),1);
+  $('hChart').innerHTML=data.map(d=>{const h=Math.max((d.v/mx)*105,3);
+    return`<div class="bcol"><div class="bv">${d.v>0?f(d.v):''}</div><div class="bstk" style="height:${h}px"></div><div class="blb">${d.l}</div></div>`}).join('')}
+
+// RAM KOTI
+function rKoti(){
+  const lf=lfCnt(),g=goal(),pct=g>0?(lf/g)*100:0,rem=Math.max(0,g-lf),da=dAvg(),eta=da>0?Math.ceil(rem/da):'∞';
+  $('rkGN').textContent=f(g);$('rkPc').textContent=pct.toFixed(4)+'%';
+  $('rkBar').style.width=Math.min(pct,100)+'%';$('rkBarT').textContent=pct.toFixed(2)+'%';
+  $('rkDn').textContent=f(lf);$('rkRm').textContent=f(rem);$('rkDA').textContent=f(da);
+  $('rkETA').textContent=typeof eta==='number'?f(eta):eta;
+  $('rkSt').textContent=sd(U().lifetime.start);$('rkAD').textContent=actDays();
+  $('rkYA').textContent=uYears().length;$('rkLS').textContent=calcLongest();
+
+  const yrs=uYears();
+  if(yrs.length>0&&lfCnt()>0){
+    $('rkYC').innerHTML='<div class="gst" style="grid-template-columns:repeat(2,1fr)">'+
+      yrs.map(yr=>{const yc=yrCnt(yr);const ypct=lf>0?((yc/lf)*100).toFixed(1):'0';
+      return`<div class="sb"><div class="sv cs">${f(yc)}</div><div class="sl">${yr} (${ypct}%)</div></div>`}).join('')+'</div>';
+  }else{$('rkYC').innerHTML='<div class="empty-state">No yearly data yet.</div>'}
+
+  const rel=MILESTONES.filter(m=>m.t<=g);
+  $('msL').innerHTML=rel.map(m=>{const dn=lf>=m.t;const rm=Math.max(0,m.t-lf);
+    return`<li class="ms-i"><div class="ms-ic ${dn?'dn':'pn'}">${m.e}</div><div class="ms-inf"><div class="ms-nm">${m.n}</div><div class="ms-dl">${m.d} ${dn?'✓':'('+f(rm)+' to go)'}</div></div><span class="ms-bg ${dn?'dn':'pn'}">${dn?'✅ Done':'Pending'}</span></li>`}).join('')}
+
+function chkMs(){
+  const u=U(),lf=lfCnt(),g=goal();
+  MILESTONES.filter(m=>m.t<=g).forEach(m=>{
+    if(lf>=m.t&&!u.lifetime.celebrated.includes(m.t)){
+      u.lifetime.celebrated.push(m.t);saveDB();
+      showCeleb(m.e,m.n+' Complete!','You reached '+f(m.t)+' × శ్రీ రామ! 🙏')}});}
+
+// PROFILE
+function rProf(){
+  const u=U(),yd=YD();
+  $('pNm').textContent=u.profile.name;
+  $('pSc').textContent='Since '+sd(u.profile.created)+' · '+uYears().length+' year(s)';
+  $('pTot').textContent=f(lfCnt());$('pAct').textContent=actDays();
+  $('pCS').textContent=calcStreak();$('pLS').textContent=calcLongest();
+  $('sNm').textContent=u.profile.name;$('sDT').textContent=f(u.profile.dailyTarget);
+  $('sYT').textContent=f(yd.yearTarget||u.profile.dailyTarget*365);
+  $('sGl').textContent=f(goal());$('sLn').textContent=u.profile.lang==='te'?'Telugu':u.profile.lang==='en'?'English':'Both';
+
+  const yrs=uYears();
+  if(yrs.length>0&&lfCnt()>0){
+    $('pYrT').innerHTML='<table class="atbl"><thead><tr><th>Year</th><th>Written</th><th>Days</th><th>Avg</th><th>Best</th></tr></thead><tbody>'+
+      yrs.map(yr=>{const yc=yrCnt(yr);const ad=actDays(yr);const avg=ad?Math.round(yc/ad):0;
+      return`<tr><td><b>${yr}</b></td><td>${f(yc)}</td><td>${ad}</td><td>${f(avg)}</td><td>${f(bDay(yr))}</td></tr>`}).join('')+'</tbody></table>';
+  }else{$('pYrT').innerHTML='<div class="empty-state">No year data yet. Start writing!</div>'}
+}
+
+function openEdit(){const u=U(),yd=YD();$('edName').value=u.profile.name;$('edTarget').value=u.profile.dailyTarget;
+  $('edYrTarget').value=yd.yearTarget||u.profile.dailyTarget*365;$('edGoal').value=goal();$('edPgSz').value=u.profile.pageSize||108;
+  $('editMod').classList.add('op')}
+function closeEdit(){$('editMod').classList.remove('op')}
+function saveEdits(){const u=U(),yd=YD();const nm=$('edName').value.trim(),dt=parseInt($('edTarget').value),yt=parseInt($('edYrTarget').value),gl=parseInt($('edGoal').value),ps=parseInt($('edPgSz').value);
+  if(nm)u.profile.name=nm;if(dt>0)u.profile.dailyTarget=dt;if(yt>0)yd.yearTarget=yt;if(gl>0)u.profile.goal=gl;if(ps>0)u.profile.pageSize=ps;
+  saveDB();closeEdit();populateUserSel();refreshAll();toast('✅ Profile updated!')}
+
+function expData(){const d=JSON.stringify(U(),null,2);const b=new Blob([d],{type:'application/json'});const url=URL.createObjectURL(b);
+  const a=document.createElement('a');a.href=url;a.download='ramkoti_'+U().profile.name.replace(/\s/g,'_')+'_'+tdy()+'.json';a.click();URL.revokeObjectURL(url);toast('📤 Exported!')}
+function rstData(){if(!confirm('⚠️ Reset ALL data for '+U().profile.name+'?'))return;if(!confirm('🙏 Cannot be undone!'))return;
+  const u=U();u.lifetime=mkLifetime();u.years={};ensureYr(u,cyr());sesC=0;malaC=0;saveDB();refreshAll();toast('🗑️ Data reset.')}
+
+// ADMIN
+function rAdmin(){
+  const users=Object.values(DB.users);const cnt=users.length;
+  let tdT=0,allT=0,actT=0;
+  users.forEach(u=>{const yd=(u.years||{})[cyr()];const tc=yd&&yd.days&&yd.days[tdy()]?yd.days[tdy()].count:0;
+    if(tc>0)actT++;tdT+=tc;allT+=u.lifetime.total});
+  $('aUsr').textContent=cnt;$('aAct').textContent=actT;$('aTdW').textContent=f(tdT);$('aToW').textContent=f(allT);
+  $('aUTbl').innerHTML=Object.entries(DB.users).map(([id,u])=>{
+    const yd=(u.years||{})[cyr()];const tc=yd&&yd.days&&yd.days[tdy()]?yd.days[tdy()].count:0;
+    const yc=yd?yd.count:0;const gp=((u.lifetime.total/(u.profile.goal||DEFGOAL))*100).toFixed(1);
+    let sk=0;if(yd){const now=new Date();for(let i=0;i<400;i++){const d=new Date(now);d.setDate(d.getDate()-i);const ds=d.toISOString().split('T')[0];
+      if(yd.days&&yd.days[ds]&&yd.days[ds].count>0)sk++;else if(i>0)break}}
+    return`<tr><td>${u.profile.name}${id===DB.active?' ⭐':''}</td><td><span class="ds ${tc>0?'on':'off'}"></span>${tc>0?'Active':'—'}</td><td>${f(tc)}</td><td>${f(yc)}</td><td>${f(u.lifetime.total)}</td><td>${gp}%</td><td>${sk}</td></tr>`}).join('')}
+
+// LANGUAGE
+function togLang(){
+  const u=U();const langs=['both','te','en'];const cur=langs.indexOf(u.profile.lang);
+  u.profile.lang=langs[(cur+1)%3];lang=u.profile.lang;saveDB();
+  $('lnBtn').textContent=lang==='te'?'EN':lang==='en'?'తె':'EN/తె';
+  refreshAll();toast('🌐 Language: '+(lang==='te'?'Telugu':lang==='en'?'English':'Both'))}
+
+// TOAST & CELEBRATION
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('vis');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('vis'),2800)}
+function showCeleb(e,t,x){$('celE').textContent=e;$('celT').textContent=t;$('celX').textContent=x;$('celebMod').classList.add('op')}
+function closeCeleb(){$('celebMod').classList.remove('op')}
+
+// INIT
+initApp();
+</script>
+</body>
+</html>
